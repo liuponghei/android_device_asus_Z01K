@@ -28,13 +28,13 @@ BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0xc170000 msm_rtb.filter=0x37 ehc
 BOARD_KERNEL_CMDLINE += sched_enable_hmp=1 sched_enable_power_aware=1
 BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1 service_locator.enable=1 swiotlb=1
 BOARD_KERNEL_CMDLINE += user_debug=31 androidboot.selinux=permissive
-BOARD_KERNEL_BASE := 0x10000000
+BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000
 
-#BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
-#TARGET_KERNEL_CONFIG := ze552kl-userdebug_defconfig
+#TARGET_KERNEL_CONFIG := ze554kl-userdebug_defconfig
 TARGET_PREBUILT_KERNEL := device/asus/Z01K/kernel
 
 TARGET_LDPRELOAD := libNimsWrap.so
