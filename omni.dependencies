@@ -2,7 +2,7 @@
   {
     "remote": "github",
     "repository": "shakalaca/android_kernel_asus_ze554kl",
-    "revision": "master",
+    "revision": "android-7.1",
     "target_path": "kernel/asus/Z01K"
   },
   {
