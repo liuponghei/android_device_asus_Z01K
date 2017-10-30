@@ -35,6 +35,7 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := ze554kl-user_defconfig
+TARGET_KERNEL_SOURCE := kernel/asus/Z01K
 # Only when you don't have the source
 # TARGET_PREBUILT_KERNEL := device/asus/Z01K/kernel
 
