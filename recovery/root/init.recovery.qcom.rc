@@ -7,6 +7,8 @@ on init
     start qcom-usb-sh
 
 on fs
+    wait /dev/block/platform/soc/c0c4000.sdhci
+    symlink /dev/block/platform/soc/c0c4000.sdhci /dev/block/bootdevice
     wait /dev/block/bootdevice/by-name/factory
     mkdir /factory 0755
     mount ext4 /dev/block/bootdevice/by-name/factory /factory ro nodev nosuid
